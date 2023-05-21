@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/tv/libs/include",
+                "/opt/intel/openvino/runtime/include/"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/rh/gcc-toolset-12/root/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

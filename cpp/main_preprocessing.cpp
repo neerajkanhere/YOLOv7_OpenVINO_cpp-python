@@ -194,7 +194,7 @@ int main(int argc, char* argv[]) {
     const std::string model_path{argv[1]};
     const char* image_path{argv[2]};
     const std::string device_name{argv[3]};
-    const bool grid{argv[4]};
+    const bool grid{argc > 4 && std::string(argv[4]) == "false" ? false : true };
 
     cv::Mat src_img = cv::imread(image_path);
 

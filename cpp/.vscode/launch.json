@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/yolov7",
+            "args": ["/t/models/yolov7/onnx-openvino/yolov7.xml", "/t/__nobkp/wipdata/bt3/040027/capture/q1/out-20230308_092834/00002001.jpg", "CPU", "0"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Custom startup commands",
+                    "text": "source ${env:HOME}/dev/envs/tmc4.gdbinit",
+                    "ignoreFailures": false
+                },                
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/opt/rh/gcc-toolset-12/root/usr/bin/gdb"
+        }
+    ]
+}
